@@ -19,4 +19,9 @@ urlpatterns = [
     url(r'^investment/(?P<pk>\d+)/edit/$', views.investment_edit, name='investment_edit'),
     url(r'^investment/create/$', views.investment_new, name='investment_new'),
 
+    url(r'^mutual/$', views.mutual_list, name='mutual_list'),
+    url(r'^mutual/(?P<pk>\d+)/delete/$', views.mutual_delete, name='mutual_delete'),
+    url(r'^mutual/(?P<pk>\d+)/edit/$', views.mutual_edit, name='mutual_edit'),
+    url(r'^mutual/create/$', views.mutual_new, name='mutual_new'),
+
 ]
